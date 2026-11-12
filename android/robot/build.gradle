@@ -1,0 +1,7 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.htnhome.timoremote.robot'
+    compileSdk 35
+    defaultConfig { applicationId 'com.htnhome.timoremote.robot'; minSdk 26; targetSdk 28; versionCode 16; versionName '1.9.6' }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}

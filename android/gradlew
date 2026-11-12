@@ -1,0 +1,4 @@
+#!/bin/sh
+TIMO_GRADLE_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+if [ -n "$JAVA_HOME" ]; then TIMO_JAVA="$JAVA_HOME/bin/java"; else TIMO_JAVA=java; fi
+exec "$TIMO_JAVA" -classpath "$TIMO_GRADLE_DIR/gradle/wrapper/gradle-wrapper.jar" org.gradle.wrapper.GradleWrapperMain "$@"

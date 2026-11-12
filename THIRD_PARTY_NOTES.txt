@@ -1,0 +1,14 @@
+This independent source project does not bundle the proprietary robot SDK AAR/APK.
+It interoperates with the SDK service already installed on the robot through its Binder protocol.
+The robot vendor's software and Android platform remain subject to their own terms.
+
+The Gradle wrapper JAR is included for rebuilding. Gradle is distributed under Apache License 2.0:
+https://github.com/gradle/gradle/blob/master/LICENSE
+Android Gradle Plugin and Android SDK/build tools are downloaded separately by Android Studio/Gradle.
+
+Windows dependencies are installed separately by pip: Pillow (HPND/Pillow license) and sounddevice (MIT).
+Optional EXE building uses PyInstaller (GPL with bootloader exception).
+Their projects publish their own licenses; no dependency wheels are bundled in this archive.
+
+Local debug builds use Android tooling's standard debug signing. A deployed
+installation can be updated only with an APK signed by its original key.
